@@ -13,4 +13,3 @@ if dic.count(max(dic)) > 1:
     print("?")
 else:
     print(word_list[dic.index(max(dic))])
-
