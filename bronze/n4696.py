@@ -1,0 +1,8 @@
+'''
+2024.5.26
+4696 - St. Ives
+'''
+while True:
+    n = float(input())
+    if n == 0: break
+    print('%.2f' % (1 + n+ n**2 + n**3 + n**4))
