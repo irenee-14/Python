@@ -5,10 +5,8 @@
 
 n = int(input())
 
-fi = [0 for i in range(n)]
-for i in range(3):
-    fi[i] = 1
+fi = [1 for i in range(n + 1)]
 
-for i in range(3, n):
+for i in range(4, n + 1):
     fi[i] = fi[i-1] + fi[i - 3]
-print(fi[n - 1])
+print(fi[n])
