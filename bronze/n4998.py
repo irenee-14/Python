@@ -4,7 +4,7 @@
 '''
 
 try:
-    while (1):
+    while True:
         n, b, m = map(float, input().split())
         cnt = 0
         while n < m:
