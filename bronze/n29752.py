@@ -3,14 +3,18 @@
 29752 - 최장 스트릭
 '''
 
-lst = list(map(int, input().split()))
+N = int(input())
+A = list(input().split())
 
-res = 0
-max_res = 0
-for i in lst:
-    if i == 0:
-        res = 0
-        continue
-    res += 1
-    max_res = max(res, max_res)
-print(max_res)
+result = 0
+tmp = 0
+
+for i in A:
+    if i != '0':
+        tmp += 1
+        result = max(result, tmp)
+
+    if i == '0':
+        result = max(result, tmp)
+        tmp = 0
+print(result)
