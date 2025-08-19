@@ -11,5 +11,6 @@ while 1:
         break
     else:
         lst.pop(-1)
-print(''.join(lst.reverse()))
+lst.reverse()
+print(''.join(lst))
 
