@@ -1,0 +1,9 @@
+'''
+2025.9.12
+33046 - Alea Iacta Est
+'''
+
+A, B, C, D = map(int, input().split())
+answer = (A + B - 1) % 4
+answer = (answer + C + D - 1) % 4
+print(answer + 1)
