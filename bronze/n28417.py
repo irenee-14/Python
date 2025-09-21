@@ -14,6 +14,6 @@ for _ in range(N):
     Run.sort(reverse=True)
     Trick.sort(reverse=True)
 
-    result = max(res, Run[0] + sum(Trick[:2]))
+    res = max(res, Run[0] + sum(Trick[:2]))
 
 print(res)
